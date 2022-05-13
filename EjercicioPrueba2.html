@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<HTMl>
+        <head>
+            <META charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie-edge">
+            <title>Formularios</title>
+        </head>
+        <body>
+            <form method="POST" action="destinatario.html"> 
+                <table style="background-color: rgb(22, 75, 175); width:1155px; Height:20px">
+                    <td> <h3>Edit Settings</h3></td>
+                </table>
+                <table style="background-color: aqua; width:1155px; Height:20px">
+                    <tr>
+                        <td><Label for="Domain">Name</Label></td>
+                        <td>*<input style="width:400px; Height:20px"type="text" name="Domain" value="info.yourcompanydomain.com" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><Label for="Fallback">Fallback page: </Label> </td>
+                        <td>*<input style="width:400px; Height:20px"type="text" name="Fallback" value="http://yourcompanydomain.com" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea  style="width:300px; Height:100px" >
+                                Note: The Fallback page is used for unrecognized landing pages and whenever a landgin pages is unaviable           
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><Label for="Home">Homepage</Label></td>
+                        <td><input style="width:400px; Height:20px"type="text" name="Home" value="www.marketo.com" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Form"></label></td>
+                        <td><input type="Checkbox"name="Form">Form Prefill</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Inject"></label></td>
+                        <td><input type="checkbox" name="Inject">Inject Prefill Script At End Of Head</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Marketo"></label></td>
+                        <td><input type="checkbox" name="Marketo">Do not allow Marketo pages to be embedded in external web pages</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Remove"></label></td>
+                        <td><input type="Checkbox" name="Remove">Remove default favicon links</td>
+                    </tr>
+                </table>
+                <table style="background-color: rgb(22, 75, 175) ; width:1155px; Height:50px">
+                    <tr>
+                        <th rowspan="2"><span></span></th>
+                        <th colspan="3" rowspan="2"><span></span></th>
+                        <th colspan="2"><button style="background-color: grey;"type="button" name="cancel">Cancel</button>
+                            <button style= "background-color: coral;"type="button" name="Create">Create</button></th>
+                    </tr>
+                </table>
+            </form>
+
